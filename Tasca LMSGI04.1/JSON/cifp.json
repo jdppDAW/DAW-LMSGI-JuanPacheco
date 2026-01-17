@@ -1,0 +1,115 @@
+{
+	"cifp": {
+		"alumne":[
+			{
+				"id": 104,
+				"nom": "David",
+				"llinatges": "Fernando Pons",
+				"data_naixement": "1997-02-04",
+				"telefon": "123 45 67 88",
+				"adreça": "C/ Ejemplo º23",
+				"data_matricula": "2025-09-04",
+				"curs": "DAW"
+			},
+			{
+				"id": 155,
+				"nom": "Eva",
+				"llinatges": "Long Oria",
+				"data_naixement": "2004-05-10",
+				"correu": "elo@test.com",
+				"adreça": "C/ Ejemplo º1",
+				"data_matricula": "2025-09-04",
+				"curs": "AUT"
+			},
+			{
+				"id": 128,
+				"nom": "Pepe",
+				"llinatges": "Viyuela",
+				"data_naixement": "1963-06-02",
+				"correu": "pv@test.com",
+				"telefon": "971 40 60 80",
+				"adreça": "Av. Falsa º55",
+				"data_matricula": "2025-09-04",
+				"curs": "DAM"
+			},
+			{
+				"id": 175,
+				"nom": "Echo",
+				"llinatges": "Secunda",
+				"data_matricula": "2025-09-04",
+				"curs": "SMX"
+			}
+		
+		],
+		"professor": [
+			{
+				"id": 10,
+				"nom": "Ricardo",
+				"llinatges": "Mil Os",
+				"correu": "rmo@test.com",
+				"telefon": "654 65 67 89",
+				"adreça": "Av. Ejemplo º7",
+				"data_incorporació": "2010-10-04",
+				"departament": "Electricitat"
+			},
+			{
+				"id": 14,
+				"nom": "Victoria",
+				"llinatges": "Victory",
+				"data_naixement": "1967-07-07",
+				"correu": "vv@test.com",
+				"data_incorporació": "2005-01-01",
+				"departament": "Automoció",
+				"assignatura": [
+					{	
+						"id_assignatura": 1002,
+						"nom_assignatura": "Test",
+						"cicle": "AUT",
+						"data_inici": "2025-10-10",
+						"data_final": "2026-08-08"
+					}
+				]
+			},
+			{
+				"id": 12,
+				"nom": "Maria",
+				"llinatges": "Mag Dalena",
+				"data_incorporació": "2010-10-04",
+				"departament": "Informàtica"
+			},
+			{
+				"id": 9,
+				"nom": "Sophia",
+				"llinatges": "Aeon",
+				"correu": "sophia@monad.com",
+				"telefon": "999 99 99 99",
+				"adreça": "Blv. Gnostico º99",
+				"data_incorporació": "2000-01-01",
+				"departament": "Informàtica",
+				"assignatura": [
+					{					
+						"id_assignatura": 2003,
+						"nom_assignatura": "LMSGI",
+						"cicle": "DAW",
+						"data_inici": "2025-10-10",
+						"data_final": "2026-08-08"
+					},
+					{
+						"id_assignatura": 2002,
+						"nom_assignatura": "BBDD",
+						"cicle": "DAW",
+						"data_inici": "2025-10-10",
+						"data_final": "2026-08-08"
+					},
+					{
+						"id_assignatura": 2001,
+						"nom_assignatura": "Programación",
+						"cicle": "DAW",
+						"data_inici": "2025-10-10",
+						"data_final": "2026-08-08"
+					}					
+				]
+			}
+		]
+	}
+}
