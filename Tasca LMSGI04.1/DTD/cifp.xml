@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cifp SYSTEM "cifp.dtd">
+
+<cifp>
+	<professor id="10">
+		<nom>Ricardo</nom>
+		<llinatges>Mil Os</llinatges>
+		<correu>rmo@test.com</correu>
+		<telefon>654 65 67 89</telefon>
+		<adreça>Av. Ejemplo º7</adreça>
+		<data_incorporació>2010-10-04</data_incorporació>
+		<departament>Electricitat</departament>
+	</professor>
+
+	<alumne id="104">
+		<nom>David</nom>
+		<llinatges>Fernando Pons</llinatges>
+		<data_naixement>1997-02-04</data_naixement>
+		<telefon>123 45 67 88</telefon>
+		<adreça>C/ Ejemplo º23</adreça>
+		<data_matricula>2025-09-04</data_matricula>
+		<curs>DAW</curs>
+	</alumne>
+	
+	<alumne id="155">
+		<nom>Eva</nom>
+		<llinatges>Long Oria</llinatges>
+		<data_naixement>2004-05-10</data_naixement>
+		<correu>elo@test.com</correu>
+		<adreça>C/ Ejemplo º1</adreça>
+		<data_matricula>2025-09-04</data_matricula>
+		<curs>AUT</curs>
+	</alumne>
+	
+	<professor id="14">
+		<nom>Victoria</nom>
+		<llinatges>Victory</llinatges>
+		<data_naixement>1967-07-07</data_naixement>
+		<correu>vv@test.com</correu>
+		<data_incorporació>2005-01-01</data_incorporació>
+		<departament>Automoció</departament>
+		<assignatura id_assignatura="1002">
+			<nom_assignatura cicle="AUT">Test</nom_assignatura>
+			<data_inici>2025-10-10</data_inici>
+			<data_final>2026-08-08</data_final>
+		</assignatura>
+	</professor>
+
+	<alumne id="128">
+		<nom>Pepe</nom>
+		<llinatges>Viyuela</llinatges>
+		<data_naixement>1963-06-02</data_naixement>
+		<correu>pv@test.com</correu>
+		<telefon>971 40 60 80</telefon>
+		<adreça>Av. Falsa º55</adreça>
+		<data_matricula>2025-09-04</data_matricula>
+		<curs>DAM</curs>
+	</alumne>
+	
+		<alumne id="175">
+		<nom>Echo</nom>
+		<llinatges>Secunda</llinatges>
+		<data_matricula>2025-09-04</data_matricula>
+		<curs>SMX</curs>
+	</alumne>
+
+	<professor id="12">
+		<nom>Maria</nom>
+		<llinatges>Mag Dalena</llinatges>
+		<data_incorporació>2010-10-04</data_incorporació>
+		<departament>Informàtica</departament>
+	</professor>
+
+	<professor id="9">
+		<nom>Sophia</nom>
+		<llinatges>Aeon</llinatges>
+		<correu>sophia@monad.com</correu>
+		<telefon>999 99 99 99</telefon>
+		<adreça>Blv. Gnostico º99</adreça>
+		<data_incorporació>2000-01-01</data_incorporació>
+		<departament>Informàtica</departament>
+		<assignatura id_assignatura="2003">
+			<nom_assignatura cicle="DAW">LMSGI</nom_assignatura>
+			<data_inici>2025-10-10</data_inici>
+			<data_final>2026-08-08</data_final>
+		</assignatura>
+		<assignatura id_assignatura="2002">
+			<nom_assignatura cicle="DAW">BBDD</nom_assignatura>
+			<data_inici>2025-10-10</data_inici>
+			<data_final>2026-08-08</data_final>
+		</assignatura>
+		<assignatura id_assignatura="2001">
+			<nom_assignatura cicle="DAW">Programación</nom_assignatura>
+			<data_inici>2025-10-10</data_inici>
+			<data_final>2026-08-08</data_final>
+		</assignatura>
+	</professor>
+
+</cifp>
