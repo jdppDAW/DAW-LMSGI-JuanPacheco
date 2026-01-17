@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:element name="cifp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="alumne"/>
+        <xs:element ref="professor"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="persona">
+    <xs:sequence>
+      <xs:element ref="nom"/>
+      <xs:element ref="llinatges"/>
+      <xs:element ref="data_naixement" minOccurs="0"/>
+      <xs:element ref="correu" minOccurs="0"/>
+      <xs:element ref="telefon" minOccurs="0"/>
+      <xs:element ref="adreça" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:integer" use="required"/>
+  </xs:complexType>
+  
+  <xs:simpleType name="listaCiclos">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DAM"/>
+      <xs:enumeration value="DAW"/>
+      <xs:enumeration value="ASIX"/>
+      <xs:enumeration value="SMX"/>
+      <xs:enumeration value="SEIA"/>
+      <xs:enumeration value="ER"/>
+      <xs:enumeration value="AUT"/>
+    </xs:restriction>  
+  </xs:simpleType>
+
+  <xs:element name="alumne">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="persona">
+          <xs:sequence>
+            <xs:element ref="data_matricula"/>
+            <xs:element ref="curs"/>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="professor">
+   <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="persona">
+          <xs:sequence>
+            <xs:element ref="data_incorporació"/>
+            <xs:element ref="departament"/>
+            <xs:element ref="assignatura" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="nom" type="xs:string"/>
+  <xs:element name="llinatges" type="xs:string"/>
+  <xs:element name="data_naixement" type="xs:string"/>
+  <xs:element name="correu" type="xs:string"/>
+  <xs:element name="telefon" type="xs:string"/>
+  <xs:element name="adreça" type="xs:string"/>
+  <xs:element name="data_matricula" type="xs:string"/>
+  <xs:element name="curs" type="listaCiclos"/>
+  <xs:element name="data_incorporació" type="xs:string"/>
+  <xs:element name="departament">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Informàtica"/>
+        <xs:enumeration value="Electricitat"/>
+        <xs:enumeration value="Automoció"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="assignatura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom_assignatura"/>
+        <xs:element ref="data_inici" minOccurs="0"/>
+        <xs:element ref="data_final" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="id_assignatura" type="xs:integer" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="nom_assignatura">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="cicle" type="listaCiclos" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="data_inici" type="xs:string"/>
+  <xs:element name="data_final" type="xs:string"/>
+  
+</xs:schema>
